@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(155deg, #153677, #4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-app{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 9rem;
+    padding: 3rem 1.5rem;
+    border-radius: 19px;
+}
+.todo-app h2{
+    color: rgb(6, 6, 75);
+}
+.me{
+   width: 80%;
+   outline: none;
+   background: transparent;
+   font-size: 15px;
+   padding: 1rem 2rem;
+   border-radius: 14px;
+   border: 1px solid #4e085f;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.mee{
+    padding: 1.2rem 2.4rem;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: #153677;
+}
+.mee:hover{
+    background: transparent;
+    border: 1px solid #4e085f;
+    color:#4e085f;
+}
+.hat{
+  margin-top: 1rem;
+}
+.hat li{
+    list-style-type: none;
+    margin: 15px 4px;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    padding: 1rem 0.5rem;
+    
+}
+
+.hat li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.hat li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: url(Unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 16px;
+    left: 8px;
+    margin-left: -1.7rem;
+}
+.hat li.checked{
+    text-decoration: line-through;
+}
+.hat li.checked::before{
+    background-image: url(Checked.png);
+    height: 26px;
+    width: 26px;
+}
+.milk{
+    width: 28px;
+    height: 28px;
+    background-color: rgb(25, 184, 25);
+    border-radius: 50%;
+}
+.hat li span{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 0;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 50%;
+}
+.hat li span:hover{
+    background: #edeef0;
+}
+
+@media only screen and (max-width:900px){
+    .todo-app{
+        width: 80%;
+    }
+    .box{
+       gap: 0.5rem;
+    }
+}
+@media only screen and (max-width:550px){
+ .mee{
+    padding: 1rem 1.5rem;
+ }
+ .todo-app{
+    width: 90%;
+}
+
+}
