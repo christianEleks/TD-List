@@ -26,8 +26,8 @@ mee.addEventListener("click", () => {
     }
  })
 function myFun(){
-  const countItem = hat.querySelectorAll("li")
-    if(countItem.length > 4){
+  const countItems = hat.querySelectorAll("li")
+    if(countItems.length > 4){
         container.style.height = "100%"
     }
     else{
