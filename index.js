@@ -1,7 +1,7 @@
 const input = document.querySelector("input");
 const mee = document.querySelector(".mee")
 const hat = document.querySelector(".hat")
-container = document.querySelector(".container")
+const container = document.querySelector(".container")
 
 
 mee.addEventListener("click", () => {
